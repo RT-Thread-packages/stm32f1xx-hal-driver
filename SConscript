@@ -53,6 +53,10 @@ if GetDepend(['RT_USING_ADC']):
     src += [os.path.join(src_path, 'stm32f1xx_hal_adc.c')]
     src += [os.path.join(src_path, 'stm32f1xx_hal_adc_ex.c')]
 
+if GetDepend(['RT_USING_DAC']):
+    src += [os.path.join(src_path, 'stm32f1xx_hal_dac.c')]
+    src += [os.path.join(src_path, 'stm32f1xx_hal_dac_ex.c')]
+
 if GetDepend(['RT_USING_RTC']):
     src += [os.path.join(src_path, 'stm32f1xx_hal_rtc.c')]
     src += [os.path.join(src_path, 'stm32f1xx_hal_rtc_ex.c')]
